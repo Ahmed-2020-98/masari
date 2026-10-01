@@ -1,0 +1,23 @@
+{
+  "name": "@masari/api",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./server": "./src/server.ts"
+  },
+  "scripts": {
+    "generate": "openapi-typescript ../../../backend/storage/api-docs/openapi.json -o src/schema.d.ts",
+    "typecheck": "tsc --noEmit",
+    "lint": "echo skip"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.104.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "openapi-typescript": "^7.13.0",
+    "typescript": "^5"
+  }
+}

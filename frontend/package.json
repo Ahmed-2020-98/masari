@@ -1,0 +1,12 @@
+{
+  "name": "masari-frontend",
+  "private": true,
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "dev": "pnpm --parallel --filter \"./apps/*\" dev",
+    "build": "pnpm -r --filter \"./apps/*\" build",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "api:types": "pnpm --filter @masari/api generate"
+  }
+}
