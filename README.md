@@ -11,7 +11,7 @@ frontend/   pnpm monorepo
   packages/ui  Design system (RTL, brand tokens, components)
   packages/api Typed client + OpenAPI-generated schema
   packages/i18n Arabic messages + formatters
-mobile/     Reserved for the Flutter app
+mobile/     Flutter merchant app (iOS/Android) — see mobile/README.md
 ```
 
 ## Run locally
